@@ -1,0 +1,23 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	margin: 0rem;
+	overflow: hidden;
+}
+/* > operator means style image class only if parent of image-track id  */
+#track > .image {
+	width: 40vmin;
+	height: 56vmin; /* [%]vmin: viewport minimum (whatever is smaller height or width)  */
+	object-fit: cover; /* aspect ratio */
+	object-position: 100% center;
+}
+
+#track {
+	display: flex;
+	gap: 4vmin;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(0%, -50%); /*x,y*/
+}
