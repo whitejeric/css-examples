@@ -1,0 +1,24 @@
+:root {
+	font-size: 16px;
+	font-family: 'Open Sans';
+	--text-primary: '#b6b6b6';
+	--text-secondary: #ececec;
+	--bg-primary: #23232e;
+	--bg-secondary: #32326e;
+	/*
+    -- is a custom property/variable
+    when defined in root can be used in all css classes*/
+}
+
+body {
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	margin-left: 5rem;
+	padding-left: 1rem;
+	/* rem := em but in reference to the root (16*5 = 80)*/
+}
