@@ -117,8 +117,6 @@ main {
 	transition: transform var(--transition-speed) -50ms;
 }
 
-.navbar:hover
-
 /*small*/
 @media only screen and (max-width: 600px) {
 	.navbar {
