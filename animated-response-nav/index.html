@@ -1,16 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="style.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
 	<body>
-		<nav class="navbar"></nav>
+		<nav class="navbar">
+			<ul class="navbar-nav">
+				<li class="logo">
+					<a href="#" class="nav-link">
+						<span class="link-text">Home</span>
+						<svg
+							viewBox="0 0 1024 1024"
+							class="icon"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M386.2 899.3H109.9c-42.5 0-77-34.5-77-77V545.9c0-42.5 34.5-77 77-77h276.4c42.5 0 77 34.5 77 77v276.4c0 42.5-34.5 77-77.1 77z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M386.2 914.3H109.9c-50.7 0-92-41.3-92-92V545.9c0-50.7 41.3-92 92-92h276.4c50.7 0 92 41.3 92 92v276.4c0 50.7-41.3 92-92.1 92zM109.9 483.9c-34.2 0-62 27.8-62 62v276.4c0 34.2 27.8 62 62 62h276.4c34.2 0 62-27.8 62-62V545.9c0-34.2-27.8-62-62-62H109.9z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M248.1 684.1m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M248.1 734.1c-27.6 0-50-22.4-50-50s22.4-50 50-50 50 22.4 50 50-22.4 50-50 50z m0-70.1c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M146.2 567.8m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M146.2 617.8c-27.6 0-50-22.4-50-50s22.4-50 50-50 50 22.4 50 50-22.5 50-50 50z m0-70c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M350 567.8m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M350 617.8c-27.6 0-50-22.4-50-50s22.4-50 50-50 50 22.4 50 50-22.4 50-50 50z m0-70c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M146.2 800.3m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M146.2 850.3c-27.6 0-50-22.4-50-50s22.4-50 50-50 50 22.4 50 50-22.5 50-50 50z m0-70c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M350 800.3m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M350 850.3c-27.6 0-50-22.4-50-50s22.4-50 50-50 50 22.4 50 50-22.4 50-50 50z m0-70c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M932 500.3L691.2 635.9c-37.1 20.9-84 7.7-104.9-29.3L450.7 365.8c-20.9-37.1-7.7-84 29.3-104.9l240.8-135.6c37.1-20.9 84-7.7 104.9 29.3l135.6 240.8c20.9 37.1 7.7 84.1-29.3 104.9z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M653.5 660.8c-32.2 0-63.5-16.9-80.3-46.9L437.6 373.1c-12.1-21.4-15.1-46.3-8.4-69.9s22.1-43.4 43.5-55.4l240.8-135.6c21.4-12.1 46.3-15.1 69.9-8.4 23.7 6.6 43.4 22.1 55.4 43.5l135.6 240.8c12.1 21.4 15.1 46.3 8.4 69.9-6.6 23.7-22.1 43.4-43.5 55.4l-7.4-13.1 7.4 13.1L698.5 649c-14.2 8-29.7 11.8-45 11.8z m105-530.4c-10.5 0-20.9 2.7-30.3 8L487.4 273.9c-14.4 8.1-24.8 21.4-29.3 37.3s-2.4 32.7 5.7 47.1l135.6 240.8c16.8 29.8 54.7 40.4 84.5 23.6l240.8-135.6c14.4-8.1 24.8-21.4 29.3-37.3 4.5-16 2.4-32.7-5.7-47.1L812.7 162c-8.1-14.4-21.4-24.8-37.3-29.3-5.6-1.6-11.3-2.3-16.9-2.3z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M706 380.6m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M706.1 430.7c-4.5 0-9.1-0.6-13.5-1.9-12.9-3.6-23.6-12-30.1-23.6-6.6-11.6-8.2-25.1-4.6-38 3.6-12.9 12-23.6 23.6-30.1 11.6-6.6 25.1-8.2 38-4.6 12.9 3.6 23.6 12 30.1 23.6 6.6 11.6 8.2 25.1 4.6 38-3.6 12.9-12 23.6-23.6 30.1-7.7 4.3-16.1 6.5-24.5 6.5z m-0.1-70.1c-3.4 0-6.8 0.9-9.8 2.6-4.7 2.6-8 6.9-9.5 12.1-1.4 5.2-0.8 10.6 1.8 15.2 2.6 4.7 6.9 8 12.1 9.5 5.2 1.4 10.6 0.8 15.2-1.8 4.7-2.6 8-6.9 9.5-12.1 1.4-5.2 0.8-10.6-1.8-15.2-2.6-4.7-6.9-8-12.1-9.5-1.8-0.6-3.6-0.8-5.4-0.8z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M560.2 329.3m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M560.2 379.3c-17.5 0-34.5-9.2-43.7-25.5-13.5-24-5-54.6 19.1-68.1 24-13.5 54.6-5 68.1 19.1 13.5 24 5 54.6-19.1 68.1-7.6 4.4-16.1 6.4-24.4 6.4z m-0.1-70c-3.3 0-6.7 0.8-9.8 2.6-9.6 5.4-13 17.7-7.6 27.3 5.4 9.6 17.7 13 27.3 7.6 9.6-5.4 13-17.7 7.6-27.3-3.7-6.5-10.5-10.2-17.5-10.2z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M851.8 431.9m-35 0a35 35 0 1 0 70 0 35 35 0 1 0-70 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M851.9 481.9c-17.5 0-34.5-9.2-43.7-25.5-13.5-24-5-54.6 19.1-68.1 24-13.5 54.6-5 68.1 19.1 13.5 24 5 54.6-19.1 68.1-7.7 4.4-16.1 6.4-24.4 6.4z m-0.1-70c-3.3 0-6.7 0.8-9.8 2.6-9.6 5.4-13 17.7-7.6 27.3 5.4 9.6 17.7 13 27.3 7.6 9.6-5.4 13-17.7 7.6-27.3-3.7-6.6-10.5-10.2-17.5-10.2z"
+									fill="#0F53A8"
+								></path>
+							</g>
+						</svg>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<svg
+							viewBox="0 0 1024 1024"
+							class="icon"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M498.2 409.7c-21.9 36-40.7 76.2-55.2 119.8-69.2 208.2-14.5 413.8 122.2 459.2 136.6 45.4 303.5-86.6 372.7-294.8 14.5-43.6 23.5-87.1 27.5-129L498.2 409.7z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M621 1013.1c-20.8 0-41.1-3.3-60.6-9.8-36.3-12-67.8-34.4-93.6-66.6-24.5-30.5-42.9-68.4-54.7-112.6-23.8-89.6-18-196 16.4-299.5C443 481 462 439.7 485.1 401.7l6.4-10.5 490.4 162.9-1.2 12.2c-4.2 44.3-13.7 88.8-28.2 132.4-34.4 103.5-93.4 192.2-166.1 249.7-35.9 28.4-73.3 47.8-111.2 57.5-18.4 4.8-36.5 7.2-54.2 7.2zM505.1 428.2c-19.1 33.1-35.1 68.7-47.5 106.1-32.5 97.9-38.1 198-15.8 281.8C463.5 897.7 509.1 953.8 570 974c16.5 5.5 33.6 8.2 51.2 8.2 47.4 0 97.7-19.7 146-57.9 68.1-53.8 123.4-137.4 156-235.3 12.4-37.4 21-75.5 25.5-113.4L505.1 428.2z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M624.5 660.3s-44.8 26.3-79 11.3c-34.3-15.1-45.1-65.9-45.1-65.9s37.7-10.4 72 4.7c34.3 15.1 52.1 49.9 52.1 49.9z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M569.4 691.6c-11 0-21.1-2-30.1-5.9-17.4-7.7-32.3-23.6-43.1-46-7.7-16.1-10.7-30.1-10.9-30.7l-3-14.2 14-3.9c1.8-0.5 43.5-11.6 82.3 5.5s58.8 55.4 59.6 57l6.6 12.9-12.5 7.4c-0.5 0.3-13 7.6-30 12.8-11.5 3.3-22.6 5.1-32.9 5.1z m-49-73.5c5.7 14.5 16 32.6 31.3 39.4 15.3 6.7 35.6 2 50.2-3.5-7.5-9.7-19.6-22.3-35.7-29.4-16-7.2-33.5-7.6-45.8-6.5z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M714.2 690.1s20.1 47.9 56.6 56.3c36.5 8.4 75.5-25.8 75.5-25.8s-24-30.9-60.5-39.3c-36.5-8.5-71.6 8.8-71.6 8.8z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M782.6 763.1c-5.3 0-10.4-0.6-15.3-1.7-18.6-4.3-36.2-17.1-50.9-37.2-10.5-14.3-16.2-27.6-16.4-28.2l-5.6-13.4 13-6.4c1.6-0.8 40.5-19.5 81.9-10 41.3 9.5 68.1 43.4 69.2 44.9l8.9 11.5-10.9 9.6c-0.5 0.4-11.3 9.9-27.1 18.1-16.3 8.5-32.2 12.8-46.8 12.8z m-46.5-64.6c8.3 13.2 21.8 29.1 38.1 32.8 17.1 3.9 36.2-5.1 48.6-12.9-9.2-8.1-23.4-18.3-40.5-22.2-17.1-3.9-34.4-1-46.2 2.3z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M609.4 92.7c-53.5 30.1-108 169.5-108 169.5s-121.3-87.7-182.6-84c-85.3 5.1-257.9 89.2-257.9 89.2 202.2 293.7 461.2 65 461.2 65s341.5 52 352.5-304.4c0 0-190.7 22.8-265.2 64.7z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M304.7 432.5c-10.8 0-21.5-0.6-32-1.9-85.7-10.5-161.2-62.5-224.5-154.5L38 261.3l16.1-7.8c7.2-3.5 176.4-85.5 263.8-90.7 28.4-1.7 69.7 12.6 122.8 42.6 21.9 12.4 41.1 24.8 53.8 33.3 6.1-14.1 15.5-34.9 27.2-57.1 28.4-53.9 55.3-88.3 80.2-102.3 76.3-42.9 263-65.6 270.9-66.5l17.8-2.1-0.6 17.8c-3.4 111.6-38.8 196.2-105.1 251.5-45 37.5-105.1 61.1-173.9 68.2-39.3 4.1-70.7 1.7-84.2 0.3-10.6 8.5-35.8 27.5-71 45.3-50.5 25.6-102.1 38.7-151.1 38.7zM84.1 273.4c55.8 75.2 120.4 117.8 192.3 126.6 126.4 15.5 234.3-78.3 235.4-79.2l5.4-4.8 7.1 1.1c0.3 0.1 36.5 5.4 84.4 0.3 43.5-4.6 105.9-19 156.6-61.2 55.6-46.4 86.8-117.1 93-210.4-48.9 6.8-183.5 27.9-241.3 60.4-39.9 22.4-86.6 124.3-101.2 161.7l-7.3 18.5-16.1-11.7c-32.5-23.5-126.9-83.9-172.6-81.1-66.3 3.9-190.9 59.1-235.7 79.8z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M444.3 272.6s-26.5 57.6-71.4 66.3c-44.9 8.7-91.1-34.7-91.1-34.7s30.6-36.7 75.5-45.4c44.9-8.7 87 13.8 87 13.8z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M360.7 355.5c-46.3 0-87.5-38.2-89.4-40l-10.6-10 9.3-11.2c1.4-1.7 34.7-41 84.4-50.7 49.7-9.7 95.3 14.3 97.2 15.3l12.8 6.8-6.1 13.2c-1.2 2.6-30.4 64.9-82.5 75-5 1.2-10.1 1.6-15.1 1.6zM304.9 303c3.9 2.8 8.6 5.9 13.8 8.8 13.2 7.5 32.9 15.6 51.2 12 18.4-3.6 33.5-18.5 43-30.4 3.7-4.7 6.9-9.3 9.5-13.3-14.6-5.1-38.2-10.8-62.2-6.2-24.1 4.8-43.7 18.9-55.3 29.1z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M555 240.1s53.5 34.1 95.9 17.1 57.8-78.5 57.8-78.5-45.6-14.3-88 2.7-65.7 58.7-65.7 58.7z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M624.9 277.3c-39.6 0-76.2-23-78.2-24.2l-12.3-7.8 7.1-12.7c1.1-1.9 26.4-46.7 73.4-65.5 47-18.8 96.3-3.7 98.4-3.1l13.9 4.3-3.5 14.1c-0.7 2.8-17.8 69.4-67 89.1-10.4 4.2-21.2 5.8-31.8 5.8z m-47.4-42.7c4.4 2 9.5 4.2 15.2 6.1 14.4 4.9 35.2 9.2 52.6 2.3 17.4-6.9 29.5-24.4 36.6-37.8 2.8-5.3 5.1-10.4 6.8-14.9-15.3-2.3-39.5-3.5-62.2 5.5-22.8 9-39.5 26.6-49 38.8z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M75.654 262.987l158.428 538.799-29.55 8.688L46.105 271.675z"
+									fill="#0F53A8"
+								></path>
+							</g>
+						</svg>
+						<span class="link-text">Cat</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<svg
+							viewBox="0 0 1024 1024"
+							class="icon"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M512.1 1018.4c-13.8 0-25-11.2-25-25V33c0-13.8 11.2-25 25-25s25 11.2 25 25v960.4c0 13.8-11.2 25-25 25z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M851.7 877.8c-6.4 0-12.8-2.4-17.7-7.3L154.9 191.3c-9.8-9.8-9.8-25.6 0-35.4 9.8-9.8 25.6-9.8 35.4 0L869.4 835c9.8 9.8 9.8 25.6 0 35.4-4.9 4.9-11.3 7.4-17.7 7.4z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M992.3 538.2H31.9c-13.8 0-25-11.2-25-25s11.2-25 25-25h960.4c13.8 0 25 11.2 25 25s-11.2 25-25 25z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M172.5 877.8c-6.4 0-12.8-2.4-17.7-7.3-9.8-9.8-9.8-25.6 0-35.4L834 156c9.8-9.8 25.6-9.8 35.4 0 9.8 9.8 9.8 25.6 0 35.4L190.2 870.5c-4.9 4.8-11.3 7.3-17.7 7.3z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M512.1 141.3c-205.4 0-371.9 166.5-371.9 371.9s166.5 371.9 371.9 371.9S884 718.6 884 513.2 717.5 141.3 512.1 141.3z m0 645.6c-151.1 0-273.7-122.5-273.7-273.7S361 239.6 512.1 239.6s273.7 122.5 273.7 273.7-122.6 273.6-273.7 273.6z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M512.1 900.1c-52.2 0-102.9-10.2-150.6-30.4-46.1-19.5-87.4-47.4-123-82.9-35.5-35.5-63.4-76.9-82.9-123-20.2-47.7-30.4-98.4-30.4-150.6 0-52.2 10.2-102.9 30.4-150.6 19.5-46.1 47.4-87.4 82.9-123 35.5-35.5 76.9-63.4 123-82.9 47.7-20.2 98.4-30.4 150.6-30.4 52.2 0 102.9 10.2 150.6 30.4 46.1 19.5 87.4 47.4 123 82.9 35.5 35.5 63.4 76.9 82.9 123C888.8 410.3 899 461 899 513.2c0 52.2-10.2 102.9-30.4 150.6-19.5 46.1-47.4 87.4-82.9 123-35.5 35.5-76.9 63.4-123 82.9-47.7 20.2-98.4 30.4-150.6 30.4z m0-743.8c-95.3 0-185 37.1-252.4 104.5s-104.5 157-104.5 252.4c0 95.3 37.1 185 104.5 252.4s157 104.5 252.4 104.5c95.3 0 185-37.1 252.4-104.5S869 608.6 869 513.2c0-95.3-37.1-185-104.5-252.4S607.4 156.3 512.1 156.3z m0 645.6c-77.1 0-149.6-30-204.1-84.5s-84.5-127-84.5-204.1 30-149.6 84.5-204.1 127-84.5 204.1-84.5 149.6 30 204.1 84.5 84.5 127 84.5 204.1-30 149.6-84.5 204.1-127 84.5-204.1 84.5z m0-547.3c-69.1 0-134 26.9-182.9 75.8-48.9 48.9-75.8 113.8-75.8 182.9 0 69.1 26.9 134 75.8 182.9C378.1 745.1 443 772 512.1 772s134-26.9 182.9-75.8c48.9-48.9 75.8-113.8 75.8-182.9 0-69.1-26.9-134-75.8-182.9s-113.8-75.8-182.9-75.8z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M512.1 513.2m-78.3 0a78.3 78.3 0 1 0 156.6 0 78.3 78.3 0 1 0-156.6 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M512.1 606.5c-51.4 0-93.3-41.9-93.3-93.3s41.9-93.3 93.3-93.3 93.3 41.9 93.3 93.3-41.9 93.3-93.3 93.3z m0-156.6c-34.9 0-63.3 28.4-63.3 63.3s28.4 63.3 63.3 63.3 63.3-28.4 63.3-63.3-28.4-63.3-63.3-63.3z"
+									fill="#0F53A8"
+								></path>
+							</g>
+						</svg>
+						<span class="link-text">Cat</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<svg
+							viewBox="0 0 1024 1024"
+							class="icon"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M237.6 1016.1c-8.3 0-15-6.7-15-15 0-34.8 10.7-53 20.1-69.1 8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9 0-8.3 6.7-15 15-15s15 6.7 15 15c0 34.8-10.7 53-20.1 69.1-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9 0 8.3-6.7 15-15 15zM370.3 1016.1c-8.3 0-15-6.7-15-15 0-34.8 10.7-53 20.1-69.1 8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9 0-8.3 6.7-15 15-15s15 6.7 15 15c0 34.8-10.7 53-20.1 69.1-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9 0 8.3-6.7 15-15 15zM497 1016.1c-8.3 0-15-6.7-15-15 0-34.8 10.7-53 20.1-69.1 8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9 0-8.3 6.7-15 15-15s15 6.7 15 15c0 34.8-10.7 53-20.1 69.1-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9 0 8.3-6.8 15-15 15zM641.7 1016.1c-8.3 0-15-6.7-15-15 0-34.8 10.7-53 20.1-69.1 8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9s-7.4-39.3-15.9-53.9c-9.4-16.1-20.1-34.3-20.1-69.1s10.7-53 20.1-69.1c8.6-14.6 15.9-27.2 15.9-53.9 0-8.3 6.7-15 15-15s15 6.7 15 15c0 34.8-10.7 53-20.1 69.1-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9s7.4 39.3 15.9 53.9c9.4 16.1 20.1 34.3 20.1 69.1s-10.7 53-20.1 69.1c-8.6 14.6-15.9 27.2-15.9 53.9 0 8.3-6.7 15-15 15z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M834.9 430.2c-0.8-207.7-169.4-375.8-377.2-375.8S81.2 222.5 80.4 430.2h754.5z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M834.9 445.2H80.4c-4 0-7.8-1.6-10.6-4.4-2.8-2.8-4.4-6.7-4.4-10.6 0.2-52.8 10.7-104 31.3-152.2 19.8-46.5 48.1-88.3 84.1-124.2 36-35.9 77.9-64 124.5-83.7 48.3-20.4 99.5-30.7 152.4-30.7s104 10.3 152.3 30.7c46.6 19.7 88.5 47.8 124.5 83.7 36 35.9 64.3 77.6 84.1 124.2 20.5 48.2 31.1 99.4 31.3 152.2 0 4-1.6 7.8-4.4 10.6-2.8 2.8-6.6 4.4-10.6 4.4z m-739.1-30h723.8c-4-90.8-41.4-175.6-106.2-240.2C645 106.9 554.2 69.4 457.7 69.4S270.3 106.9 202 175C137.2 239.6 99.8 324.4 95.8 415.2z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M220.6 236.6c-3.2 0-6.4-1-9.1-3.1-6.6-5-7.9-14.4-2.8-21 27.5-36.1 63.5-66.1 103.9-86.6 42.4-21.5 88.2-32.4 136-32.4 8.3 0 15 6.7 15 15s-6.7 15-15 15c-43.1 0-84.3 9.8-122.5 29.1-36.4 18.4-68.8 45.4-93.6 78-2.9 4-7.4 6-11.9 6z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M798.4 150.9a39.2 42.2 0 1 0 78.4 0 39.2 42.2 0 1 0-78.4 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M837.6 208.1c-29.9 0-54.2-25.7-54.2-57.2s24.3-57.2 54.2-57.2 54.2 25.7 54.2 57.2-24.3 57.2-54.2 57.2z m0-84.5c-13.3 0-24.2 12.2-24.2 27.2s10.9 27.2 24.2 27.2c13.3 0 24.2-12.2 24.2-27.2s-10.8-27.2-24.2-27.2z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M888.8 54.4a27.3 29.4 0 1 0 54.6 0 27.3 29.4 0 1 0-54.6 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M916.1 98.7c-23.3 0-42.3-19.9-42.3-44.4s19-44.4 42.3-44.4 42.3 19.9 42.3 44.4-19 44.4-42.3 44.4z m0-58.7c-6.8 0-12.3 6.4-12.3 14.4s5.5 14.4 12.3 14.4 12.3-6.4 12.3-14.4S922.8 40 916.1 40z"
+									fill="#0F53A8"
+								></path>
+							</g>
+						</svg>
+						<span class="link-text">Cat</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<svg
+							viewBox="0 0 1024 1024"
+							class="icon"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M659.2 439.1H423.6c-13.9 0-25.2-11.3-25.2-25.2v-39.3c0-13.9 11.3-25.2 25.2-25.2h235.5c13.9 0 25.2 11.3 25.2 25.2v39.3c0.1 13.9-11.2 25.2-25.1 25.2z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M659.2 454.1H423.6c-22.2 0-40.2-18-40.2-40.2v-39.3c0-22.2 18-40.2 40.2-40.2h235.5c22.2 0 40.2 18 40.2 40.2v39.3c0.1 22.2-18 40.2-40.1 40.2z m-235.6-89.7c-5.6 0-10.2 4.6-10.2 10.2v39.3c0 5.6 4.6 10.2 10.2 10.2h235.5c5.6 0 10.2-4.6 10.2-10.2v-39.3c0-5.6-4.6-10.2-10.2-10.2H423.6z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M183.6 417.8h548.7s154.5 32 205.6 208.6c13.6 47.1-14.9 105.7-63.9 105.7H615.1s-143.8 0.1-271.7-218.4L109 487 29.1 295.3h42.6l111.9 122.5z"
+									fill="#B6CDEF"
+								></path>
+								<path
+									d="M615.1 747.1c-1.7 0-40.3-0.3-94.9-29-31.4-16.5-62-39.2-90.9-67.4-34.2-33.4-66.2-74.8-95-123l-227-25.8c-5.4-0.6-10.1-4.1-12.2-9.1L15.3 301c-1.9-4.6-1.4-9.9 1.4-14.1 2.8-4.2 7.5-6.7 12.5-6.7h42.6c4.2 0 8.2 1.8 11.1 4.9l107.4 117.6h542.1c1 0 2 0.1 3 0.3 1.7 0.4 42 8.9 88.9 40.3 27.5 18.4 51.6 40.8 71.8 66.7 25.1 32.3 44.1 70 56.3 112.2 8.9 30.9 2.3 67.3-16.8 92.8-15.6 20.7-37.4 32.1-61.5 32.1h-259z m-495.6-274l225.6 25.6c4.7 0.5 8.9 3.2 11.3 7.3 28.1 48.1 59.3 89.1 92.7 121.9 26.5 26.1 54.5 47.1 83.1 62.4 48.5 26 82.7 26.6 83 26.6H874c18.5 0 30.6-10.9 37.5-20.1 13.7-18.2 18.4-44.3 12-66.4-11-38.2-28.1-72.3-50.6-101.4-18-23.3-39.6-43.5-64.2-60.1-37.6-25.4-71.1-34.5-78.1-36.3h-547c-4.2 0-8.2-1.8-11.1-4.9L65.1 310.3H51.6l67.9 162.8z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M160.8 454.2m-68.4 0a68.4 68.4 0 1 0 136.8 0 68.4 68.4 0 1 0-136.8 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M160.8 537.6c-46 0-83.4-37.4-83.4-83.4 0-46 37.4-83.4 83.4-83.4s83.4 37.4 83.4 83.4c0 45.9-37.4 83.4-83.4 83.4z m0-136.8c-29.4 0-53.4 23.9-53.4 53.4s23.9 53.4 53.4 53.4 53.4-23.9 53.4-53.4-24-53.4-53.4-53.4z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M487.3 549.2m-35.5 0a35.5 35.5 0 1 0 71 0 35.5 35.5 0 1 0-71 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M487.3 599.7c-27.9 0-50.5-22.7-50.5-50.5s22.7-50.5 50.5-50.5c27.9 0 50.5 22.7 50.5 50.5s-22.7 50.5-50.5 50.5z m0-71c-11.3 0-20.5 9.2-20.5 20.5s9.2 20.5 20.5 20.5 20.5-9.2 20.5-20.5-9.2-20.5-20.5-20.5z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M595.6 549.2m-35.5 0a35.5 35.5 0 1 0 71 0 35.5 35.5 0 1 0-71 0Z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M595.6 599.7c-27.9 0-50.5-22.7-50.5-50.5s22.7-50.5 50.5-50.5 50.5 22.7 50.5 50.5-22.7 50.5-50.5 50.5z m0-71c-11.3 0-20.5 9.2-20.5 20.5s9.2 20.5 20.5 20.5 20.5-9.2 20.5-20.5-9.2-20.5-20.5-20.5z"
+									fill="#0F53A8"
+								></path>
+								<path
+									d="M813.3 454.2s34.8 0 109.5 130.5c24.3 42.5-99.3 28.7-148.3 28.7L719 481.7l94.3-27.5z"
+									fill="#89B7F5"
+								></path>
+								<path
+									d="M853.7 630.5c-14.5 0-30.6-0.5-47.8-1.2-11.8-0.5-22.9-0.9-31.3-0.9-6 0-11.5-3.6-13.8-9.2l-55.5-131.7c-1.7-3.9-1.6-8.4 0.3-12.3s5.2-6.8 9.3-8l94.2-27.5c1.4-0.4 2.8-0.6 4.2-0.6 5.4 0 17.4 2.6 36.8 20.2 25.1 22.7 54 62.4 85.7 117.9 8.5 14.9 4.5 26 1.3 31.2-10.6 17.7-40.7 22.1-83.4 22.1z m-69.1-32c6.9 0.2 14.5 0.5 22.5 0.8 21.9 0.9 46.7 1.8 67.8 0.7 24.2-1.3 32.9-4.9 35.6-6.5-0.2-0.4-0.4-0.8-0.7-1.3-56.7-99.1-88.6-118.8-96.4-122.4l-74 21.6 45.2 107.1z"
+									fill="#0F53A8"
+								></path>
+								<path d="M568 213.1h48.9v136.4H568z" fill="#B6CDEF"></path>
+								<path
+									d="M616.9 364.4H568c-8.3 0-15-6.7-15-15V213.1c0-8.3 6.7-15 15-15h48.9c8.3 0 15 6.7 15 15v136.4c0 8.2-6.7 14.9-15 14.9z m-33.9-30h18.9V228.1H583v106.3z"
+									fill="#0F53A8"
+								></path>
+								<path d="M178.3 213.1H1004" fill="#B6CDEF"></path>
+								<path
+									d="M1004 228.1H178.3c-8.3 0-15-6.7-15-15s6.7-15 15-15H1004c8.3 0 15 6.7 15 15s-6.7 15-15 15z"
+									fill="#0F53A8"
+								></path>
+								<path d="M513.9 790.7h427.4" fill="#B6CDEF"></path>
+								<path
+									d="M941.3 805.7H513.9c-8.3 0-15-6.7-15-15s6.7-15 15-15h427.4c8.3 0 15 6.7 15 15s-6.7 15-15 15z"
+									fill="#0F53A8"
+								></path>
+								<path d="M631.1 732.1v58.6" fill="#B6CDEF"></path>
+								<path
+									d="M631.1 805.7c-8.3 0-15-6.7-15-15v-58.6c0-8.3 6.7-15 15-15s15 6.7 15 15v58.6c0 8.3-6.7 15-15 15z"
+									fill="#0F53A8"
+								></path>
+								<path d="M833.5 732.1v58.6" fill="#B6CDEF"></path>
+								<path
+									d="M833.5 805.7c-8.3 0-15-6.7-15-15v-58.6c0-8.3 6.7-15 15-15s15 6.7 15 15v58.6c0 8.3-6.7 15-15 15z"
+									fill="#0F53A8"
+								></path>
+							</g>
+						</svg>
+						<span class="link-text">Cat</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 		<main>
-			<h1>FFFFFF</h1>
-			<p>asdasdsasssdasd asdasdasd</p>
+			<h1>LOREM</h1>
+			<p>
+				Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+				justo ac diam viverra gravida. Nulla nec aliquet neque. Nullam tortor
+				nibh, finibus ut justo a, viverra tincidunt lectus. Quisque vehicula dui
+				ligula, at rutrum felis vestibulum eget. Mauris cursus tempus
+				vestibulum. Donec sit amet orci auctor, bibendum turpis id, mollis
+				nulla. Sed tristique iaculis nulla in lacinia. Cras id fermentum felis,
+				id congue risus. Sed mattis, ipsum ac accumsan elementum, quam tellus
+				gravida quam, in aliquam ipsum mi non turpis.
+			</p>
+			<p>
+				Cras rutrum mauris sed lacus tincidunt porttitor. Ut ut tempus leo, nec
+				cursus justo. Vestibulum ullamcorper eget leo non condimentum. Sed arcu
+				urna, pretium egestas ante eget, vehicula gravida ipsum. Sed at semper
+				lectus, ut commodo turpis. Etiam euismod ante sed vulputate
+				pellentesque. Curabitur bibendum enim nunc, in convallis lectus finibus
+				ac. Curabitur fringilla diam lacus. Vivamus ornare sollicitudin ornare.
+				Integer a suscipit libero. Cras sapien quam, semper nec tortor ac,
+				consectetur laoreet felis. Quisque sit amet hendrerit ligula, sit amet
+				pulvinar sapien. Morbi id congue ligula, in feugiat augue. Vestibulum
+				luctus tincidunt justo lacinia elementum. Nam dui leo, volutpat sed
+				gravida accumsan, feugiat id turpis.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+				justo ac diam viverra gravida. Nulla nec aliquet neque. Nullam tortor
+				nibh, finibus ut justo a, viverra tincidunt lectus. Quisque vehicula dui
+				ligula, at rutrum felis vestibulum eget. Mauris cursus tempus
+				vestibulum. Donec sit amet orci auctor, bibendum turpis id, mollis
+				nulla. Sed tristique iaculis nulla in lacinia. Cras id fermentum felis,
+				id congue risus. Sed mattis, ipsum ac accumsan elementum, quam tellus
+				gravida quam, in aliquam ipsum mi non turpis.
+			</p>
+			<p>
+				Cras rutrum mauris sed lacus tincidunt porttitor. Ut ut tempus leo, nec
+				cursus justo. Vestibulum ullamcorper eget leo non condimentum. Sed arcu
+				urna, pretium egestas ante eget, vehicula gravida ipsum. Sed at semper
+				lectus, ut commodo turpis. Etiam euismod ante sed vulputate
+				pellentesque. Curabitur bibendum enim nunc, in convallis lectus finibus
+				ac. Curabitur fringilla diam lacus. Vivamus ornare sollicitudin ornare.
+				Integer a suscipit libero. Cras sapien quam, semper nec tortor ac,
+				consectetur laoreet felis. Quisque sit amet hendrerit ligula, sit amet
+				pulvinar sapien. Morbi id congue ligula, in feugiat augue. Vestibulum
+				luctus tincidunt justo lacinia elementum. Nam dui leo, volutpat sed
+				gravida accumsan, feugiat id turpis.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+				justo ac diam viverra gravida. Nulla nec aliquet neque. Nullam tortor
+				nibh, finibus ut justo a, viverra tincidunt lectus. Quisque vehicula dui
+				ligula, at rutrum felis vestibulum eget. Mauris cursus tempus
+				vestibulum. Donec sit amet orci auctor, bibendum turpis id, mollis
+				nulla. Sed tristique iaculis nulla in lacinia. Cras id fermentum felis,
+				id congue risus. Sed mattis, ipsum ac accumsan elementum, quam tellus
+				gravida quam, in aliquam ipsum mi non turpis.
+			</p>
+			<p>
+				Cras rutrum mauris sed lacus tincidunt porttitor. Ut ut tempus leo, nec
+				cursus justo. Vestibulum ullamcorper eget leo non condimentum. Sed arcu
+				urna, pretium egestas ante eget, vehicula gravida ipsum. Sed at semper
+				lectus, ut commodo turpis. Etiam euismod ante sed vulputate
+				pellentesque. Curabitur bibendum enim nunc, in convallis lectus finibus
+				ac. Curabitur fringilla diam lacus. Vivamus ornare sollicitudin ornare.
+				Integer a suscipit libero. Cras sapien quam, semper nec tortor ac,
+				consectetur laoreet felis. Quisque sit amet hendrerit ligula, sit amet
+				pulvinar sapien. Morbi id congue ligula, in feugiat augue. Vestibulum
+				luctus tincidunt justo lacinia elementum. Nam dui leo, volutpat sed
+				gravida accumsan, feugiat id turpis.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+				justo ac diam viverra gravida. Nulla nec aliquet neque. Nullam tortor
+				nibh, finibus ut justo a, viverra tincidunt lectus. Quisque vehicula dui
+				ligula, at rutrum felis vestibulum eget. Mauris cursus tempus
+				vestibulum. Donec sit amet orci auctor, bibendum turpis id, mollis
+				nulla. Sed tristique iaculis nulla in lacinia. Cras id fermentum felis,
+				id congue risus. Sed mattis, ipsum ac accumsan elementum, quam tellus
+				gravida quam, in aliquam ipsum mi non turpis.
+			</p>
+			<p>
+				Cras rutrum mauris sed lacus tincidunt porttitor. Ut ut tempus leo, nec
+				cursus justo. Vestibulum ullamcorper eget leo non condimentum. Sed arcu
+				urna, pretium egestas ante eget, vehicula gravida ipsum. Sed at semper
+				lectus, ut commodo turpis. Etiam euismod ante sed vulputate
+				pellentesque. Curabitur bibendum enim nunc, in convallis lectus finibus
+				ac. Curabitur fringilla diam lacus. Vivamus ornare sollicitudin ornare.
+				Integer a suscipit libero. Cras sapien quam, semper nec tortor ac,
+				consectetur laoreet felis. Quisque sit amet hendrerit ligula, sit amet
+				pulvinar sapien. Morbi id congue ligula, in feugiat augue. Vestibulum
+				luctus tincidunt justo lacinia elementum. Nam dui leo, volutpat sed
+				gravida accumsan, feugiat id turpis.
+			</p>
 		</main>
 	</body>
 </html>
