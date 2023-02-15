@@ -1,0 +1,20 @@
+.photo-grid {
+	display: grid;
+	gap: 1rem;
+
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(240px, 1fr)
+	); /*smallest is 240px otherwise fractional*/
+	grid-auto-rows: 240px;
+}
+/*spans multiple rows*/
+@media screen and (min-width: 600px) {
+	.card-tall {
+		grid-row: span 2 / auto; /*spans 2 from where it is, after slash is where to end*/
+	}
+
+	.card-wide {
+		grid-column: span 2 / auto;
+	}
+}
